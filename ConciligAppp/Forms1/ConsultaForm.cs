@@ -13,6 +13,8 @@ namespace ConciligAppp.Forms1
         public ConsultaForm()
         {
             InitializeComponent();
+
+
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -44,6 +46,11 @@ namespace ConciligAppp.Forms1
                 .ToList();
 
             dgvContratos.DataSource = dados;
+        }
+
+        private void lblBemVindo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

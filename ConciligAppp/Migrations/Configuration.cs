@@ -14,10 +14,17 @@
 
         protected override void Seed(ConciligAppp.Data1.AppDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            if (!context.Usuarios.Any())
+            {
+                context.Usuarios.Add(new ConciligAppp.Models1.Usuario
+                {
+                    Nome = "Admin",
+                    Email = "admin@gmail.com",
+                    SenhaHash = "admin"
+                });
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+                context.SaveChanges();
+            }
         }
     }
 }

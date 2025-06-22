@@ -35,15 +35,17 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(656, 354);
+            this.lblEmail.Location = new System.Drawing.Point(20, 130);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(71, 25);
+            this.lblEmail.Size = new System.Drawing.Size(80, 24);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email:";
             this.lblEmail.Click += new System.EventHandler(this.label1_Click);
@@ -53,7 +55,7 @@
             this.txtEmail.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(742, 354);
+            this.txtEmail.Location = new System.Drawing.Point(106, 130);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(414, 24);
             this.txtEmail.TabIndex = 1;
@@ -61,11 +63,11 @@
             // 
             // lblSenha
             // 
-            this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(656, 394);
+            this.lblSenha.Location = new System.Drawing.Point(20, 220);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(80, 25);
+            this.lblSenha.Size = new System.Drawing.Size(80, 24);
             this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha:";
             // 
@@ -75,7 +77,7 @@
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSenha.Location = new System.Drawing.Point(742, 395);
+            this.txtSenha.Location = new System.Drawing.Point(106, 220);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(414, 24);
             this.txtSenha.TabIndex = 3;
@@ -85,7 +87,7 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(798, 497);
+            this.btnLogin.Location = new System.Drawing.Point(802, 595);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(239, 111);
             this.btnLogin.TabIndex = 4;
@@ -95,24 +97,37 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(552, 65);
+            this.label1.Font = new System.Drawing.Font("Segoe Fluent Icons", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(636, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(745, 55);
+            this.label1.Size = new System.Drawing.Size(574, 64);
             this.label1.TabIndex = 5;
             this.label1.Text = "BEM-VINDO AO CONCILIG APP!";
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(873, 188);
+            this.label2.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(236, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 31);
+            this.label2.Size = new System.Drawing.Size(99, 38);
             this.label2.TabIndex = 6;
             this.label2.Text = "Login";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtSenha);
+            this.panel1.Controls.Add(this.lblEmail);
+            this.panel1.Controls.Add(this.lblSenha);
+            this.panel1.Location = new System.Drawing.Point(636, 192);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(565, 345);
+            this.panel1.TabIndex = 7;
             // 
             // LoginForm
             // 
@@ -121,19 +136,16 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -146,5 +158,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
