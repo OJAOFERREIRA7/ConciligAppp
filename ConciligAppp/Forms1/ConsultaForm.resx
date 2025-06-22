@@ -138,7 +138,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgvContratos.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnAtualizar.Location" type="System.Drawing.Point, System.Drawing">
     <value>754, 520</value>
@@ -162,6 +162,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAtualizar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblBemVindo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBemVindo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt</value>
+  </data>
+  <data name="lblBemVindo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 35</value>
+  </data>
+  <data name="lblBemVindo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 42</value>
+  </data>
+  <data name="lblBemVindo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblBemVindo.Text" xml:space="preserve">
+    <value>Bem-vindo, [NOME_USUARIO]</value>
+  </data>
+  <data name="&gt;&gt;lblBemVindo.Name" xml:space="preserve">
+    <value>lblBemVindo</value>
+  </data>
+  <data name="&gt;&gt;lblBemVindo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBemVindo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBemVindo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
