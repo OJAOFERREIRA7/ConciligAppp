@@ -61,7 +61,7 @@ namespace ConciligAppp.Forms1
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            var consultaForm = new ConsultaForm();
+            var consultaForm = new ConsultaForm(_usuario);
             consultaForm.ShowDialog();
         }
 

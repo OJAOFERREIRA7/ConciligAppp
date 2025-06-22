@@ -1,4 +1,5 @@
 ﻿using ConciligAppp.Data1;
+using ConciligAppp.Models1;
 using System;
 using System.Data.Entity.SqlServer; // Necessário para SqlFunctions
 using System.Linq;
@@ -9,12 +10,13 @@ namespace ConciligAppp.Forms1
     public partial class ConsultaForm : Form
     {
         private readonly AppDbContext _context = new AppDbContext();
+        private readonly Usuario _usuario; // Armazena o usuário logado
 
-        public ConsultaForm()
+        // ✅ Novo construtor que recebe o usuário
+        public ConsultaForm(Usuario usuario)
         {
             InitializeComponent();
-
-
+            _usuario = usuario;
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -39,7 +41,6 @@ namespace ConciligAppp.Forms1
                     Cliente = g.Key.NomeCliente,
                     CPF = g.Key.CPF,
                     TotalContratos = g.Sum(c => c.Valor),
-                    // Usa SqlFunctions.DateDiff no EF6
                     MaiorAtrasoDias = g.Max(c => SqlFunctions.DateDiff("day", c.DataVencimento, hoje)) ?? 0
                 })
                 .OrderByDescending(x => x.TotalContratos)
@@ -48,9 +49,20 @@ namespace ConciligAppp.Forms1
             dgvContratos.DataSource = dados;
         }
 
-        private void lblBemVindo_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
+            this.Hide(); // Fecha ou esconde a tela atual
+            MainForm main = new MainForm(_usuario); // Reabre o MainForm com o mesmo usuário
+            main.Show();
+        }
 
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resultado = MessageBox.Show("Tem certeza que deseja sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

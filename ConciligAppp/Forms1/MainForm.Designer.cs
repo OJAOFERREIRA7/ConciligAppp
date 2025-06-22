@@ -67,7 +67,7 @@
             // btnConsulta
             // 
             this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulta.Location = new System.Drawing.Point(1225, 509);
+            this.btnConsulta.Location = new System.Drawing.Point(1225, 405);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(158, 91);
             this.btnConsulta.TabIndex = 2;
@@ -146,7 +146,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1220, 387);
+            this.label7.Location = new System.Drawing.Point(1220, 543);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(315, 106);
             this.label7.TabIndex = 9;

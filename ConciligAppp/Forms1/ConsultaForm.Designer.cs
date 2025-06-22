@@ -32,6 +32,8 @@
             this.dgvContratos = new System.Windows.Forms.DataGridView();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContratos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +58,27 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // btnVoltar
+            // 
+            resources.ApplyResources(this.btnVoltar, "btnVoltar");
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnSair
+            // 
+            resources.ApplyResources(this.btnSair, "btnSair");
+            this.btnSair.Name = "btnSair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // ConsultaForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.dgvContratos);
@@ -78,5 +96,7 @@
         private System.Windows.Forms.DataGridView dgvContratos;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnSair;
     }
 }
